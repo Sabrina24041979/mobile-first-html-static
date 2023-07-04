@@ -9,6 +9,9 @@
     <meta property="og:description" content="One page website using simple css class for mobile optimization..." />
     <link rel="stylesheet" href="assets/css/w3css.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="icon" href="assets/image/icon_restaurant.png" type="image/svg+xml">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         html{
             scroll-behavior: smooth;
@@ -54,13 +57,112 @@
         }
 
     footer img {
-        display:flex
-        position:
-        weight:25px;
+        display:flex;
+        height:25px;
         width: 25px;
         float: center;
     }
+
+    .logors{
+        display: flex;
+        justify-content:baseline
+    }
+
+    BODY{
+        background-color: rgda(255,255,255,0.8);
+
+    }
     </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+        
+        h1,h2,h3{
+            font-family:'Saira', sans-serif;
+        }
+
+        p{
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+        }
+
+        @font-face {
+            font-family: 'Sansik';
+            src: url(assets/fonts/Sansilk.ttf);
+        }
+        footer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding-top: 35px;
+
+        }
+
+        footer img {
+            margin-top: 20px;
+            height: 50px;
+            width: 50px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .footer{
+            box-shadow: 0px 0px 10px 3px rgba(252,231,247,0.75);
+            transition: 0.5s ease-in;}
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 30px;
+            background-color: white;
+            padding: 10px;
+            transition: 0.5s ease-out;
+            height: 400px;
+        }
+
+        .contact {
+            position: right;
+            top: -100px;
+        }
+
+        .userful {
+            text-align: center;
+            margin-top: 20%;
+            margin-bottom: 0;
+            position: relative;
+            top: -110px;
+        }       
+
+        .content{
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            top: -110px;
+        }
+
+        .content p{
+            padding-top:120px;
+        }
+
+        body {
+            background-image: url("assets/image/background-images.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        footer {
+            background-image: url("assets/image/background-images.jpg");
+            background-size: cover;
+        }
+
+
+        
+
+
+        </style>
 
 </head>
 <body>
@@ -74,7 +176,7 @@
                 <i class="fa fa-bars"></i>
             </a>
 
-            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-idem w3-button">Home</a>
+            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-idem w3-button"><img id="logo"style="width:30px" src="assets/image/icon_restaurant.png" alt=""></a>
             <a href="#about" class="w3-bar-idem w3-button w3-hide-small">About</a>
             <a href="#portfolio" class="w3-bar-idem w3-button w3-hide-small">Portfolio</a>
             <a href="#contact" class="w3-bar-idem w3-button w3-hide-small">Contact</a>
@@ -96,6 +198,8 @@
     </button>
 
     <!--MAIN START-->
+
+  
     <main class="w3-container">
             <!--HOME SECTION START-->
             <section id="home" class="w3-display-container">
@@ -104,11 +208,11 @@
             </section>
             <!--HOME SECTION END-->
             <!--ABOUT SECTION START-->
-            <section id="about">
+            <section data-aos="fade-up" id="about">
                 <h2 class="w3-black w3-white">About</h2>
                     <div class="w3-row">
                         <div class="w3-half">
-                         <img src="assets/image/restaurant.jpg" alt="exemple restaurant" class="w3-image" style="width:70%">
+                         <img src="assets/image/restaurant_paul_bocuse.jpg" alt="exemple restaurant" class="w3-image" style="width:100%">
                         </div>
                         <div class="w3-half w3-padding">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, ex, repudiandae nisi beatae unde dicta aspernatur est asperiores numquam sequi voluptates quisquam sapiente a ipsam sit dolorem, quas sunt fugit quod. Nostrum ratione harum nemo, veniam minus praesentium perferendis vel porro nulla atque. Id similique minus commodi. Magni excepturi iure voluptate. Voluptate modi tempora distinctio quos quae ea, laborum optio dolorum iste nesciunt cupiditate eaque doloribus assumenda maxime culpa expedita. Quidem enim similique non. Officia expedita maxime vel est optio ratione quasi eum itaque. Quisquam explicabo officia totam, esse modi culpa rerum odit dolorum in optio maiores exercitationem labore dolores, neque illo porro! Quos eligendi repudiandae perspiciatis, hic animi exercitationem natus? Cupiditate facere quo maiores aperiam iure ab consectetur vitae eius perspiciatis fugiat! Deserunt voluptate inventore, minus officiis alias omnis numquam nemo, doloremque optio corrupti ratione ipsum nostrum dicta, velit impedit cum molestias repellat? 
@@ -123,31 +227,22 @@
             <section id="portfolio">
                 <h2 class="w3-black w3-white">Portfolio</h2>
 
-                    <div class="w3-row-padding">
-
-                        <article class="w3-col m4 w3-center">
-                        <div class="w3-card"> 
-                            <h3>Restaurant 1</h3>
-                            <img src="assets/image/restaurant 1.jpg" alt="" class="w3-image ">
-                        </div>
-                        </article>
-                        
-                
-                        <article class="w3-col m4 w3-center">
-                        <div class="w3-card"> 
-                            <h3>Restaurant 2</h3>
+                <div class="w3-row-padding">
+                    <article class="w3-col m4 w3-border w3-center">
+                        <h3>Restaurant 1</h3>
+                        <img src="assets/image/restaurant 1.jpg" alt="" class="w3-image" width="100%">
+                    </article>
+                    <article class="w3-col m4 w3-border w3-center">
+                        <h3>Restaurant 2</h3>
                             <img src="assets/image/restaurant 2.jpg" alt="" class="w3-image">
-                        </div>
-                        </article>
-
-                        <article class="w3-col m4 w3-center">
-                        <div class="w3-card"> 
-                            <h3>Restaurant 3</h3>
+                    </article>
+                    <article class="w3-col m4 w3-border w3-center">
+                        <h3>Restaurant 3</h3>
                             <img src="assets/image/restaurant 3.jpg" alt="" class="w3-image">
-                        </div>
-                        </article>
+                    </article>
+                </div>
 
-                    </div>
+                   
 
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, ex, repudiandae nisi beatae unde dicta aspernatur est asperiores numquam sequi voluptates quisquam sapiente a ipsam sit dolorem, quas sunt fugit quod. Nostrum ratione harum nemo, veniam minus praesentium perferendis vel porro nulla atque. Id similique minus commodi. Magni excepturi iure voluptate. Voluptate modi tempora distinctio quos quae ea, laborum optio dolorum iste nesciunt cupiditate eaque doloribus assumenda maxime culpa expedita. Quidem enim similique non. Officia expedita maxime vel est optio ratione quasi eum itaque. Quisquam explicabo officia totam, esse modi culpa rerum odit dolorum in optio maiores exercitationem labore dolores, neque illo porro! Quos eligendi repudiandae perspiciatis, hic animi exercitationem natus? Cupiditate facere quo maiores aperiam iure ab consectetur vitae eius perspiciatis fugiat! Deserunt voluptate inventore, minus officiis alias omnis numquam nemo, doloremque optio corrupti ratione ipsum nostrum dicta, velit impedit cum molestias repellat? 
                     </p>
@@ -166,14 +261,60 @@
 
 <!--FOOTER START-->
     <footer>
-            <img src="assets/image/logo_facebook.png" alt="">
-            <img src="assets/image/logo_insta.png" alt="">
-            <img src="assets/image/logo_linkedin.png" alt="">
+
+        <div class="menu">
+
+            <section class="footer">
+
+                <div class="contact">
+                        <img id="icon" src="assets/image/icon_restaurant.png" alt="">
+                        <p>115 rue Maréchal Juin 69002 Lyon</p>
+                        <p>Phone: +33 04 78 88 60 72</p>
+                        <p>Email: info.restaurants.de.lyon@gmail.com</p>
+
+                        <div class="logors">
+                            <a href="facebook" title="Vers notre facebook"><img id="facebook" src="assets/image/logo_facebook.png" alt=""></a>
+                
+                            <a href="instagram" title="Vers notre instagram"><img id="instagram" src="assets/image/logo_insta.png" alt=""></a>
+                
+                            <a href="linkedin" title="Vers notre linkedin"><img Iid="linkedin" src="assets/image/logo_linkedin.png" alt=""></a>
+                        </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="content">
+                        <p>Pour souscrire à notre newslettre, veuillez indiquer ci-dessous votre adresse mail.</p>
+                        <form class="subscription">
+                            <input class="add-email" type="email" placeholder="souscription@moi.fr">
+                            <button class="submit-email" type="button">
+                              <span class="after-submit">Souscription</span>
+                             </button>
+                          </form>
+
+                    </div>
+
+                </div>
+
+                
+
+            </section>
+
+        </div>
+        <p>&copy; Les meilleurs restaurants de Lyon. <br>
+            </p>
+            
 <!--FOOTER END-->
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+
+        AOS.init();
+
     function toogleNavbar()
+        // select mobileNav
     {
        var nav = document.getElementById("mobileNav");
        nav.classList.toggle("w3-show");
